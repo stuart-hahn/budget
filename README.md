@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Simple Budget App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimalist budgeting app built with React, designed to help users track their expenses against a fixed budget. This app focuses on essential functionality without any unnecessary complexities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Set a fixed budget and track remaining funds.
+- Add and view expenses with a simple form.
+- Automatically updates the remaining budget based on expenses.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend framework used for building the user interface.
+- **JavaScript**: Language used for logic and functionality.
+- **CSS**: Basic styling for components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these steps to get the app running on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have Node.js and npm installed. You can check if they are installed by running:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+node -v
+npm -v
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If not, download and install Node.js and npm from [Node.js official website](https://nodejs.org/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/stuart-hahn/simple-budget-app.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate into the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd simple-budget-app
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the required dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+5. Open your browser and go to `http://localhost:3000` to see the app in action.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Set your budget by editing the default value in `App.js`.
+2. Use the "Add Expense" form to enter the name and amount of your expenses.
+3. The app will display the list of expenses and update the remaining budget dynamically.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+- `src/`
+  - `components/`: Contains all the main components of the app.
+    - `Budget.js`: Displays the total and remaining budget.
+    - `Expense.js`: Displays individual expenses.
+    - `ExpenseList.js`: Lists all the expenses.
+    - `AddExpenseForm.js`: A form to add new expenses.
+  - `App.js`: Main application file that combines all components.
+  - `index.js`: Entry point for React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Future Improvements
 
-### Advanced Configuration
+- Ability to edit and delete expenses.
+- Option to set a new budget dynamically.
+- Add categories for expenses.
+- Improve styling and add themes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- Inspired by the simplicity of budgeting apps like YNAB (You Need A Budget).
+- Thanks to the React community for their excellent documentation and support.
+
+---
+
+Happy budgeting!
