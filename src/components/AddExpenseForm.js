@@ -1,5 +1,6 @@
 // src/components/AddExpenseForm.js
 import React, { useState } from "react";
+import styles from "./AddExpenseForm.module.css";
 
 function AddExpenseForm({ addExpense }) {
   const [name, setName] = useState("");
@@ -13,12 +14,13 @@ function AddExpenseForm({ addExpense }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.formContainer}>
       <input
         type="text"
         placeholder="Expense name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        className={styles.inputField}
         required
       />
       <input
@@ -26,9 +28,12 @@ function AddExpenseForm({ addExpense }) {
         placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
+        className={styles.inputField}
         required
       />
-      <button type="submit">Add Expense</button>
+      <button type="submit" className={styles.submitButton}>
+        Add Expense
+      </button>
     </form>
   );
 }

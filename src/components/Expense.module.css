@@ -1,0 +1,6 @@
+/* src/components/Expense.module.css */
+.expenseItem {
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}

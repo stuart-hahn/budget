@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Budget from "./components/Budget";
 import ExpenseList from "./components/ExpenseList";
 import AddExpenseForm from "./components/AddExpenseForm";
+import styles from "./App.module.css";
 
 function App() {
   const [expenses, setExpenses] = useState([]);
@@ -13,11 +14,13 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Simple Budget App</h1>
-      <Budget budget={budget} expenses={expenses} />
-      <ExpenseList expenses={expenses} />
-      <AddExpenseForm addExpense={addExpense} />
+    <div className={styles.app}>
+      <div className={styles.container}>
+        <h1>Simple Budget App</h1>
+        <Budget budget={budget} expenses={expenses} />
+        <ExpenseList expenses={expenses} />
+        <AddExpenseForm addExpense={addExpense} />
+      </div>
     </div>
   );
 }
