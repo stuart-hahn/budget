@@ -1,0 +1,18 @@
+/* src/components/Budget.module.css */
+.budgetContainer {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.budget {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.remaining {
+  color: #4caf50;
+  font-size: 1.2rem;
+}
